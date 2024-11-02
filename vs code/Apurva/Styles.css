@@ -1,0 +1,143 @@
+/* Existing CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.banner {
+    background-image: url('banner-image.jpg'); /* Replace with your banner image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* New CSS for Image Slider */
+.image-slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.slider-controls .prev {
+    margin-left: 10px;
+}
+
+.slider-controls .next {
+    margin-right: 10px;
+}
+
+.about-us {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #5cb85c;
+}
+
+.specialization {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.specialization-item {
+    text-align: center;
+}
+
+.specialization-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-left: 3px solid #5cb85c;
+}
+
+.sidebar-item {
+    margin-bottom: 20px;
+}
+
+.sidebar-item h3 {
+    color: #5cb85c;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

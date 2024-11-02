@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Field</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-image: url("img/tp_1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            height: 100px;
+            padding-top: 5%;
+            text-decoration-color: #1c1fd8;
+            text-shadow: #1c1fd8;
+            text-size-adjust: 10%;
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #277eb0;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+        }
+        section a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: #9873e7;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+	form {
+		background-color: aqua;
+		text-align: center;
+		padding: 20px 0;
+		margin-bottom: 5%;
+
+	}
+</style>
+</head>
+<body>
+    <header>
+        <h1> </h1>
+    </header>
+    <nav>
+        <h3>Visualize MetaData of your own plot after TP. Scheme</h3>
+        <a href="file:///D:/vs%20code/BROWN.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="file:///D:/vs%20code/contact_us.html">Contact</a>
+        <a href="file:///D:/vs%20code/user_registration.html">Sign-Up</a>
+        <a href="file:///D:/vs%20code/login-page.html">Login</a>
+    </nav>
+    <section>
+        <P> </P>
+    </section>
+    <footer>
+        &copy; Apoorva. All rights reserved.
+    </footer>
+</body>
+<form id="registrationform" name="registrationform" action="null" method="post" autocomplete="off">
+
+	<!--  -->
+	<div class="container-fluid">
+		
+	<div class="col-md-12">
+		<div class="row">
+			<div class="login-page userRegistration">
+					<div class="">
+						<div class="frm reg_form form-horizontal">
+							<h1 class="block-head">
+								REGISTRATION FORM
+							</h1>							
+							<div>
+								<span id="msgError" class="msgError" style="color: red"> </span>
+							</div>
+							<div class="sub_head">
+								<h5>Create profile Id</h5>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Aadhar Number:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="loginid" name="loginid" placeholder="Enter Aadhar Number" class="form-control" onblur="myFunction()" type="text" value="" maxlength="12" autocomplete="off">
+									<span id="loginiderr" class="identify" style="color: red"></span>									
+								</div>						
+								<label class="control-label col-sm-2" for="pwd">Password:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="password1" name="password" minlength="6" placeholder="Enter password" type="password" class="form-control" value="" maxlength="15" autocomplete="off">
+									<span id="passworderr" class="identify" style="color: red"></span>									
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Confirm password<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="confirmpassword" name="confirmpassword" minlength="6" placeholder="Enter Confirm Password" type="password" class="form-control" value="" maxlength="15" autocomplete="off">
+									<span id="confirmpassworderr" class="identify" style="color: red"></span>	
+								</div>
+							</div>
+							<div class="sub_head">
+								<h5>
+									Contact Information
+								</h5>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Mobile Number:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="mobilenumber" name="mobilenumber" placeholder="Enter Mobile Number" class="form-control" type="number" value="" maxlength="10" autocomplete="off">
+									<span id="mobilenumbererr" class="identify" style="color: red"></span>
+									<label class="control-label" for="pwd" style="text-align: left;"></label>
+									<p>Submitting the form an OTP will be sent to your registered Mobile No.</p>
+								</div>							
+								<label class="control-label col-sm-2" for="pwd">Email:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="email" name="email" placeholder="Enter Email" class="form-control" type="text" value="" autocomplete="off">
+									<span id="emailerr" class="identify" style="color: red"></span>									
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Full Name:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="firstname" name="firstname" placeholder="Enter Full Name" class="form-control" type="text" value="" autocomplete="off">
+									<span id="firstnameerr" class="identify" style="color: red"></span>	
+								</div>
+								<label class="control-label col-sm-2" for="pwd">Address:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="address" name="address" placeholder="Enter address" class="form-control" type="text" value="" autocomplete="off">
+									<span id="addresserr" class="identify" style="color: red"></span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="pwd">Country:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<select id="country" name="country" class="form-control" size="1">
+										<option value="Select">
+											Select
+										</option>
+										<option value="india">
+											India
+										</option>
+									</select>
+									<span id="countryerr" class="identify" style="color: red"></span>	
+								</div>
+							<div id="curstate">
+								<label class="control-label col-sm-2" for="pwd">State:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<select id="state" name="state" class="form-control" size="1">
+										<option value="Select">Select</option>
+										<option value="telangana">
+											Gujarat
+										</option>
+										<option value="others">
+											OTHERS
+										</option>
+									</select>
+									<span id="stateerr" class="identify" style="color: red"></span>	
+								</div>
+							</div>	
+							</div>
+							<div class="form-group" id="duplicate" style="display: none;">
+								<div class="form-group" id="otherstatenew" style="display: none;">
+								<label class="control-label col-sm-2" for="pwd">Other State<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="otherstate" name="otherstate" placeholder="Enter Other State Name" class="form-control" type="text" value="" autocomplete="off">
+									<span id="othstateerr" class="identify" style="color: red"></span>	
+								</div>
+								<label class="control-label col-sm-2" for="pwd">Other District<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="otherdist" name="otherdist" placeholder="Enter Other District Name" class="form-control" type="text" value="" autocomplete="off">
+									<span id="otherdisterr" class="identify" style="color: red"></span>	
+								</div>
+							</div>
+								<input id="hashval" name="hashvalue" class="form-control" type="hidden" value="" autocomplete="off">
+							</div>
+							<div class="form-group" id="">
+								<label class="control-label col-sm-2" for="pwd">Pin Code:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<input id="pincode" name="pincode" placeholder="Enter pincode" class="form-control" type="text" value="" maxlength="6" autocomplete="off">
+									<span id="pincodeerr" class="identify" style="color: red"></span>	
+								</div>
+								<div class="" id="original">
+								<label class="control-label col-sm-2" for="pwd">District:<font color="red">*</font></label>
+								<div class="col-sm-4">
+									<select id="district" name="district" class="form-control" size="1">
+										<option value="Select">
+											Select
+										</option>
+										
+											<option value="01">Surat</option>
+										
+											<option value="17">Ahmedabad</option>
+										
+											<option value="11">Vadodara</option>
+										
+											<option value="31">Valsad</option>
+										
+											<option value="06">Vapi</option>
+										
+											<option value="14">Tapi</option>	
+									</select>
+									<span id="districterr" class="identify" style="color: red"></span>	
+								</div>
+							</div>
+							</div>
+							<div class="form-group" style="margin: 0 auto; display: flex; justify-content: center;">	
+								<div class="col-sm-2">
+								
+									<button type="submit"><a href="file:///D:/vs%20code/login-page.html"</a>submit</button>
+								</div>
+								<div class="col-sm-2">
+									
+										<a href="file:///D:/vs%20code/BROWN.html">Home</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--  -->
+
+<div>
+<input type="hidden" name="CSRFToken" value="8773220e-21e6-408a-9b10-84b6793e347f" autocomplete="off">
+<input type="hidden" name="hdnEncryptNames" value="hdnEncryptNames" autocomplete="off">
+<input type="hidden" name="hdnEncryptValues" value="hdnEncryptValues" autocomplete="off">
+</div></form>
+</html>

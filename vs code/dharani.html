@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+    <title>Brown Field</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> 
+    <meta http-equiv="Pragma" content="no-cache"> 
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styleHomenew.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/lightslider.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        function redirectUrl(url) {
+            debugger;
+            var context='';
+            window.location.href=context+"/"+url;
+        }
+        $(window).load(function() {
+            // debugger;
+            preventBack();
+            if (document.getElementById("lang") != null) {
+                
+                if(document.getElementById("lang").value=="en"){
+                    document.getElementById("english").style.display="none";	
+                    document.getElementById("telugu").style.display="inline";
+                    }
+                
+                if(document.getElementById("lang").value=="te"){
+                    //alert(document.getElementById("lang").value);
+                    document.getElementById("telugu").style.display="none";	
+                    document.getElementById("english").style.display="inline";
+                    }
+            }
+        });
+        
+        function langchangeformheader(id){
+            debugger;
+            var conf
+            if(id=="lang=en"){
+                conf=confirm("This will redirect you to Dharani English Website.");
+            }else {
+                conf=confirm("This will redirect you to Dharani Telugu Website.");
+            }
+            if(!conf) {
+                return false;
+            }
+            
+            var currenturl="";
+            var currenturl="";
+            var csrfToken4= '';
+            var allcookies = document.cookie;
+            cookiearray = allcookies.split(';');
+            for(var i=0; i<cookiearray.length; i++){
+              name = cookiearray[i].split('=')[0].trim();
+              value = cookiearray[i].split('=')[1].trim();
+              if(name == 'setAuth'){
+                  csrfToken4= value;
+              }
+            } 
+            debugger;
+            
+            var oldurl=window.location.href;
+            
+            var removecsrf1=oldurl.split("?csrf=")[0];
+            var removecsrf2=removecsrf1.split("&csrf=")[0];
+            var removelang1=removecsrf2.split("?lang=")[0]; 
+            var removelang2=removelang1.split("&lang=")[0]; 
+            var checkvalue=removelang2.search("=");
+            
+            if(checkvalue > 0){
+                currenturl=removelang2+"&"+id+"&csrf="+csrfToken4;
+            
+            }else{
+                currenturl=removelang2+"?"+id+"&csrf="+csrfToken4;
+            }
+            location.href=currenturl;
+        }
+    </script>
+    
+    <script>
+    window.history.forward();
+    function preventBack(){
+        window.history.forward();
+    }
+    window.onpageshow = function(evt){
+        if (evt.persisted)
+            preventBack();
+    }
+    window.onunload = function() {
+        void (0);
+    }
+    </script>
+</head>
+<body class="bg">
+ 
+    <input type="hidden" id="currentLang" value="">
+    <div class="wrap">
+        <div id="topbar" class="d-lg-block justify-content-end">
+            <div class="row mx-0">
+                <div id="siteactions" class="col pr-0 text-right">
+                    <a title="Change website language" class="lang cursor" onclick="langchangeformheader(this.id);" id="lang=te">తెలుగు</a>
+                    <a title="Change page contrast" id="makeorig" href="#" class="bg-white text-black">A</a>
+                    <a title="Change page contrast" id="makeblack" href="#" class="bg-dark text-white">A</a>
+                    <a title="Increase font size" id="fontup" href="#">+A</a> <a title="Reset font size" id="fontreset" href="#">A</a>
+                    <a title="Decrease font size" id="fontdown" href="#">-A</a>
+                </div>
+            </div>
+        </div>           
+        <div class="py-sm-4"></div>
+        <div class="row mx-0 align-items-center mb-4">
+            <div class="col-4 col-sm-1">
+                <img src="img/edtd stc img.png" border="0" alt="Dharani">
+            </div>
+            <div class="col-12 col-sm-6   text-white">            
+                <p class="font22 mb-0 pl-0">
+                    <b>Sabavath Tarun | دھرنی | SVNIT</b>
+                </p>
+                <b>
+                    <p>
+                        "A planners social cultural fest"
+                        <br>
+                        "Brown field of planners"
+                    </p>
+                </b>
+            </div>
+            <!-- CMDIV -->  
+        </div>
+        <div class="row mx-0 my-4 ">
+            <div class="col mr-sm-2 pd-25 text-white text-center rounded bg1">
+                <a href="/agricultureHomepage?lang=en">
+                    <button class="btn btn-success bg-green text-center border px-3 shadow text-white mr-sm-2 font22 btnBig">
+                        <!-- <img src="img/agriculture_i.png" class="mr-3" width="64"/> -->
+                        <b>Brown field</b>
+                    </button>
+                </a>     
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center text-white">
+                <!-- Copyright	©	All rights reserved with Chief Commissioner of Land Administration, Govt. of Telangana. -->
+                "Copyright © All rights reserved with Chief Commissioner of Land Administration, Govt. of Telangana."
+            </div>
+        </div>
+    </div>
+</body>

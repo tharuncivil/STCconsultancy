@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Image Slider</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            transition: transform 1s ease;
+        }
+        .slide {
+            width: 100%;
+            flex: 1 0 100%;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+        @keyframes slideAnimation {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(0%); }
+            30% { transform: translateX(-100%); }
+            55% { transform: translateX(-100%); }
+            60% { transform: translateX(-200%); }
+            85% { transform: translateX(-200%); }
+            90% { transform: translateX(-300%); }
+            100% { transform: translateX(-300%); }
+        }
+        .slides {
+            animation: slideAnimation 20s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"> <img src="" alt="Image 1"></div>
+            <div class="slide"> <img src="" alt="Image 2"></div>
+            <div class="slide"> <img src="" alt="Image 3"></div>
+            <div class="slide"> <img src="" alt="Image 4"></div>
+        </div>
+    </div>
+</body>
+</html>

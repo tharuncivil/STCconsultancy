@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Field</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-image: url("img/tp_1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            padding-bottom: 1%;
+            padding-right: 3%;
+            height: 100px;
+            padding-top: 1%;
+            
+            
+            text-decoration-color: #1c1fd8;
+            text-shadow: #1c1fd8;
+            text-size-adjust: 10%;
+            text-decoration: none;
+        }
+        nav {
+            background-color: #277eb0;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section3 {
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 10px 0;
+            text-align: center;
+            
+            color: #010211;
+            justify-content: center;
+            text-shadow: #f91b1b;
+            stroke: #fe3030;
+            
+        }
+        section3 a {
+            text-decoration: none;
+            margin: 0 80px;
+            
+            
+        }
+        section3 a:hover {
+            text-decoration: underline;
+            
+        }
+        footer {
+            background-color: #333;
+            color: #9873e7;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .homedata{
+            display: inline-block;
+            width: 500px;
+            height: 60px;
+            padding: 0px 1px;
+            background-image: url("img/bf_logo.png");
+            margin: 0% 100px;
+            text-align: left;
+            text-indent: 10%;
+            text-transform: uppercase;
+            
+        }
+        .homedata1{
+            text-align: left;
+            padding-top: 3%;
+            
+        }
+        section3 .homedata b{
+            text-decoration: underline;
+            text-shadow: #277eb0;
+            
+        }
+        section3 .homedata br{
+            text-indent: 10%;
+        }
+        section3 img{
+            position: relative;
+        }
+        section3 h2{
+            color: rgb(226, 50, 50);
+            text-decoration: underline;
+        }
+        section3 h3{
+            color: blue;
+        }
+        .home button{
+            color: red;
+            fill: aquamarine;
+            width: 100px;
+            height: 30px;
+            text-size-adjust: 10%;
+            
+        }
+        section1 {
+            background-size: auto;
+            padding: 10px 10;
+            text-align: center;
+            margin: 2%;
+            color: #010211;
+            justify-content: center;
+        }
+        section1 a {
+            text-decoration: none;
+            margin: 0 100px;
+        }
+        section1 a:hover {
+            text-decoration: underline;    
+        }
+        section1 p{
+            align-items: center;
+        }
+        
+        section2 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 100%;
+            transition: transform 1s ease;
+        }
+        .slide {
+            width: 100%;
+            flex: 1 0 100%;
+        }
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+        @keyframes slideAnimation {
+            0% { transform: translateX(0%); }
+            25% { transform: translateX(0%); }
+            30% { transform: translateX(-100%); }
+            55% { transform: translateX(-100%); }
+            60% { transform: translateX(-200%); }
+            85% { transform: translateX(-200%); }
+            90% { transform: translateX(-300%); }
+            100% { transform: translateX(-300%); }
+        }
+        .slides {
+            animation: slideAnimation 20s infinite;
+        }
+
+        section {
+            background-size: auto;
+            
+            padding: 10px 0;
+            text-align: center;
+            
+            color: #010211;
+            justify-content: center;
+            text-shadow: #f91b1b;
+            stroke: #fe3030;
+            
+        }
+        section a {
+            text-decoration: none;
+            margin: 0 80px;
+            
+            
+        }
+        section a:hover {
+            text-decoration: underline;
+            
+        }
+        footer {
+            background-color: #333;
+            color: #9873e7;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        section img{
+            position: relative;
+        }
+        section h2{
+            color: rgb(226, 50, 50);
+            text-decoration: underline;
+        }
+        section h3{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><img src="D:\vs code\img\signup-icon.png"  width="50px" height="50px"></p>
+        <a href="file:///D:/vs%20code/brown_user_registration.html"><button><b>Sign-Up</b></button></a>
+        <a href="file:///D:/vs%20code/login-page.html"><button><b>LogIn</b></button></a>
+        
+    </header>
+    <nav>
+        <h1>Visualize MetaData of your own plot after TP. Scheme</h1>
+    </nav>
+    <section1>
+        <div class="home">
+            <a href="file:///D:/vs%20code/BROWN.html"><button><b>Home</b></button></a> 
+            <a href="file:///D:/vs%20code/about.html"><button><b>About</b></button></a>
+            <a href="#"><button><b>Services</b></button></a>
+            <a href="file:///D:/vs%20code/contact_us.html"><button><b>Contact</b></button></a>
+        </div>
+        <br>
+        <!--<p> <img src="img/h_map.jpeg"</p> -->
+    </section1>
+    <section2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="img/h_map.jpeg" width="600px" height="500px"></div>
+                <div class="slide"><img src="img/W23.jpg" width="600px" height="500px"></div>
+                <div class="slide"><img src="img/tp_1.jpg" width="600px" height="500px"></div>
+                <div class="slide"><img src="img/tp3.jpeg" width="600px" height="500px"></div>
+            </div>
+    </section2>
+    <section3>        
+        <div class="homedata1">
+            <div class="homedata"><b>TP-Details</b><br>  <br>Udhna Majura - (T.P.S.NO.1)<br>	VESU - (T.P.S.NO.1)<br>Nanpura - (T.P.S.NO.2)<br>	Katargam - (T.P.S.NO.3)<br>	Karanj - (T.P.S.NO.3)<br> Athwa Umra - (T.P.S.NO.5) <br>Umra North - (T.P.S.NO.5)<br>	Anjana - (T.P.S.NO.7)<br>	Umarwada - (T.P.S.NO.8)<br>
+                Majura - (T.P.S.NO.9)<br>	Adajan - (T.P.S.NO.10)<br>	Adajan - (T.P.S.NO.11)<br>
+                Adajan - (T.P.S.NO.12)<br>ADAJAN - (T.P.S.NO.13)<br>	Fulpada - (T.P.S.NO.15)<br>
+                Kapadra - (T.P.S.NO.16)<br>	FULPADA - (T.P.S.NO.17)<br>Katargam	- (T.P.S.NO.18)<br></div>
+            <div class="homedata"><b>Infrastrucuter</b><br>  <br> Water Network<br>Road and Rail<br>Industries<br>Airport and Port<br>Power Supply<br>Health Care<br>Education<br>Housing<br>Municipal Solid Waste Management<br>Drainage<br>Strom Water Management<br>Private Player(PPP)<br>Communication Network<br>Domestic Energy<br>Fire Network<br>Milk Distribution<br> Surat Municipal Corporation<br> SUDA</div>
+        </div>
+    </section3>
+    <section>
+        <div>
+
+        </div>
+        <br>
+        <h2>About</h2>
+        <h3><b>Surat Metropolitian City</b></h3>
+        <div class="col-md-3 wminb">
+            <img src="D:\vs code\img\demographic.png" width="40px" height="40px">
+            <h3>DEMOGRAPHIC DATA</h3>
+            <ul>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico1.png"> <span><strong>114 Million Population</strong> Equivalent to 12th most populous country</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico2.png"> <span><strong>52 Million (46%)</strong> Population &lt; 24 years of age</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico3.png"> <span><strong>1.6 Million students enrol / year</strong>, 6245 Colleges and 133,406 schools</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico4.png"> <span><strong>45 Million</strong> people to be trained with employable skills by 2022</span><br>
+            </ul>
+        </div>
+        <div class="col-md-3 wminb">
+            <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmbico2.png"> 
+            <h3>BOOMING<br>ECONOMY</h3>
+            <ul>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico5.png"> <span><strong>USD 480 Billion</strong> India’s Largest Economy</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico6.png"> <span><strong>15% of India’s GDP </strong> Country’s Highest contributor</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico7.png"> <span><strong>31.4 % of India’s FDI</strong> $30 Billion Inflow in the State</span><br>
+                <img src="https://www.midcindia.org/wp-content/uploads/2021/07/wmsico8.png"> <span><strong>25 % of India’s Exports 0.38 Million registered MSMEs</strong> Investment $15 Bn</span><br>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        &copy; Apurva. All rights reserved.
+    </footer>
+</body>
+</html>

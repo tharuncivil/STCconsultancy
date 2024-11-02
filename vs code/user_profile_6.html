@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brown Field</title>
+    <style>
+        /* CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-image: url("img/tp_1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            padding-bottom: 1%;
+            padding-right: 3%;
+            height: 100px;
+            padding-top: 1%;
+            text-decoration-color: #1c1fd8;
+            text-shadow: #1c1fd8;
+            text-size-adjust: 10%;
+            text-decoration: none;
+        }
+        nav2 {
+            
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav2 h2{
+            text-size-adjust: 20px;
+        }
+        nav {
+            background-color: #277eb0;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 50px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section3 {
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 10px 0;
+            text-align: center;
+            
+            color: #010211;
+            justify-content: center;
+            text-shadow: #f91b1b;
+            stroke: #fe3030;
+            
+        }
+        section3 a {
+            text-decoration: none;
+            margin: 0 80px;
+            
+            
+        }
+        .home button{
+            color: red;
+            fill: aquamarine;
+            width: 100px;
+            height: 30px;
+            text-size-adjust: 10%;
+            
+        }
+        section1 {
+            background-size: auto;
+            padding: 10px 10;
+            text-align: center;
+            margin: 2%;
+            color: #010211;
+            justify-content: center;
+        }
+        section1 a {
+            text-decoration: none;
+            margin: 0 100px;
+        }
+        section1 a:hover {
+            text-decoration: underline;    
+        }
+        section1 p{
+            align-items: center;
+        }
+        section {
+            background-size: auto;
+            
+            padding: 10px 0;
+            text-align: center;
+            
+            color: #010211;
+            justify-content: center;
+            text-shadow: #f91b1b;
+            stroke: #fe3030;
+            
+        }
+        section a {
+            text-decoration: none;
+            margin: 0 80px;
+            
+            
+        }
+        section a:hover {
+            text-decoration: underline;
+            
+        }
+        footer {
+            background-color: #333;
+            color: #9873e7;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        section2 img{
+            position: relative;
+            
+        }
+        section h2{
+            color: rgb(226, 50, 50);
+            text-decoration: underline;
+        }
+        section h3{
+            color: blue;
+        }
+        .inline{
+            display: flex;
+
+        }
+        .a1{
+            display: inline-block;
+            width: 800px;
+            height: 800px;
+            padding: 1%;
+            flex: 33.33%;
+        }
+        .inline2{
+            display: flex;
+        }
+        .a2{
+            display: inline-block;
+            width: 800px;
+            height: 800px;
+            padding: 1%;
+            flex: 33.33%;
+        }
+        .comment-box {
+            display: none;
+            margin-left: 10px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+
+        }
+        .comment-box textarea {
+            width: 100%;
+            height: 100px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: white;
+            border: 1px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 500;
+        }
+        .popup2 {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: white;
+            border: 1px solid #000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .overlay2 {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 500;
+        }
+        
+    </style>
+    <script>
+        function showCommentBox() {
+            document.getElementById('commentBox').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <p><img src="img/user.png"  width="50px" height="50px"></p>
+        <a href="file:///D:/vs%20code/login-page.html"><button><b>User Profile</b></button></a>
+        
+    </header>
+    <section1>
+        <nav>
+            <div class="home">
+                <a href="file:///D:/vs%20code/BROWN.html"><button><b>Home</b></button></a> 
+                <a href="#"><button><b>About</b></button></a>
+                <a href="#"><button><b>Services</b></button></a>
+                <a href="#"><button><b>Contact</b></button></a>
+            </div>
+        </nav>
+        <br>
+        <!--<p> <img src="img/h_map.jpeg"</p> -->
+    </section1>
+    <nav2>
+        <h1>CGDCR Residential/Commercial bye laws with addition of stakeholder</h1>
+    </nav2>
+    <section2>
+        <div class="inline">
+            <div class="a1">
+                <img src="img/6.jpeg" alt="Workplace" usemap="#workmap" width="1000" height="800">
+            </div>
+            <div class="a1">
+                <img src="img/6_text.jpeg">
+            </div>
+        </div>
+        <button>Agree</button>
+        <button>Disagree</button>
+        </div>
+    </section2>
+    <nav2>
+        <h1>CGDCR maximum permissible FSI with Developer</h1>
+    </nav2>
+    <section3>
+        <div class="inline">
+            <div class="a1">
+                <img src="img/7.jpeg" alt="Workplace" usemap="#workmap" width="1000" height="900">
+            </div>
+            <div class="a1">
+                <img src="img/7_text.jpeg" > 
+            </div>
+        </div>
+    </section3>
+    <button>Agree</button>
+    <button>Disagree</button>
+    <nav2>
+        <h1>Cluster Development Scheme Norms</h1>
+    </nav2>
+    <section4>
+        <div class="inline">
+            <div class="a1">
+                <img src="img/8.jpeg" alt="Workplace" usemap="#workmap" width="1000" height="900">
+            </div>
+            <div class="a1">
+                <img src="img/8_text.jpeg" > 
+            </div>
+        </div>
+    </section4>
+    <button onclick="showPopup()">Agree</button>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p><b>Thank You for your response.</b></p>
+    </div>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+            setTimeout(() => {
+                window.location.href = 'file:///D:/vs%20code/BROWN.html'; // Redirect to home page (index.html)
+            }, 5000); // 2 seconds delay before redirect
+        }
+    </script>
+    <button onclick="showCommentBox()">Disagree</button>
+    <div id="commentBox" class="comment-box">
+        <form action="file:///D:/vs%20code/BROWN.html" method="post">
+            <label for="comments">Please provide your comments:</label><br>
+            <textarea id="comments" name="comments" required></textarea><br>
+            <button onclick="showPopup()">Submit</button>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <p>Your Comment is recieved.</p>
+            </div>
+            <script>
+            function showPopup() {
+                document.getElementById('popup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+                setTimeout(() => {
+                    window.location.href = 'file:///D:/vs%20code/BROWN.html'; // Redirect to home page (index.html)
+                    }, 5000); // 2 seconds delay before redirect
+                    }
+                    </script>
+                    </form>
+                </div>
+                <br
+    <h> </h>
+    <h>  </h>
+    <h>   </h>
+    <footer>
+        &copy; Apurva. All rights reserved.
+    </footer>
+</body>
+</html>
